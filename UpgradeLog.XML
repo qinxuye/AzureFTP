@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FTP2Azure">
+</Property><Property Name="解决方案文件" Value="C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure.sln">
+</Property><Property Name="Date" Value="2012年4月27日">
+</Property><Property Name="Time" Value="13:47">
+</Property></Properties><Event ErrorLevel="0" Project="C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\FTP2Azure.ccproj" Source="FTP2Azure\FTP2Azure.ccproj" Description="Upgraded ProductVersion value to 1.6.">
+</Event><Event ErrorLevel="3" Project="C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\FTP2Azure.ccproj" Source="FTP2Azure\FTP2Azure.ccproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\FTP2Azure.ccproj" Source="FTP2Azure\FTP2Azure.ccproj" Description="Upgrade CloudExtensionsDir value to $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Windows Azure Tools\1.6\.">
+</Event><Event ErrorLevel="0" Project="C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\FTP2Azure.ccproj" Source="FTP2Azure\FTP2Azure.ccproj" Description="Upgraded target file name from Microsoft.CloudService.targets to Microsoft.WindowsAzure.targets.">
+</Event><Event ErrorLevel="0" Project="C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\FTP2Azure.ccproj" Source="FTP2Azure\FTP2Azure.ccproj" Description="Added import $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props.">
+</Event><Event ErrorLevel="0" Project="C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\FTP2Azure.ccproj" Source="FTP2Azure\FTP2Azure.ccproj" Description="Added VisualStudioVersion property.">
+</Event><Event ErrorLevel="0" Project="FTPServerRole" Source="WorkerRole1\FTPServerRole.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="FTPServerRole" Source="WorkerRole1\FTPServerRole.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="AzureFtpServer" Source="AzureFtpServer\AzureFtpServer.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="AzureFtpServer" Source="AzureFtpServer\AzureFtpServer.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="" Source="FTP2Azure.sln" Description="解决方案文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="" Source="FTP2Azure.sln" Description="无需转换">
+</Event></UpgradeLog>

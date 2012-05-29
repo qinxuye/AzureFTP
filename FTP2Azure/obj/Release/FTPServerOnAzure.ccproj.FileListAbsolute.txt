@@ -1,0 +1,18 @@
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\bin\Release\ServiceConfiguration.cscfg
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Release\FTPServerRole\AzureFtpServer.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Release\FTPServerRole\AzureFtpServer.pdb
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.dll.config
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.pdb
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Release\FTPServerRole\msshrtmi.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\bin\Release\ServiceConfiguration.cscfg
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\AzureFtpServer.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\AzureFtpServer.pdb
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.dll.config
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.pdb
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\msshrtmi.dll

@@ -1,0 +1,9 @@
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Debug\FTPServerRole\AzureFtpServer.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Debug\FTPServerRole\AzureFtpServer.pdb
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Debug\FTPServerRole\FTPServerRole.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Debug\FTPServerRole\FTPServerRole.dll.config
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Debug\FTPServerRole\FTPServerRole.pdb
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Debug\FTPServerRole\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Debug\FTPServerRole\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\FTP2Azure\obj\Debug\FTPServerRole\msshrtmi.dll

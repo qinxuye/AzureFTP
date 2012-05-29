@@ -1,0 +1,7 @@
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\bin\Debug\AzureFtpServer.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\bin\Debug\AzureFtpServer.pdb
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\obj\Debug\AzureFtpServer.dll
+C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\obj\Debug\AzureFtpServer.pdb
