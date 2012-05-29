@@ -24,3 +24,16 @@ C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\WorkerRole1\bin\Re
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\WorkerRole1\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\WorkerRole1\obj\Release\FTPServerRole.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\WorkerRole1\obj\Release\FTPServerRole.pdb
+F:\AzureFTP\WorkerRole1\bin\Release\FTPServerRole.dll.config
+F:\AzureFTP\WorkerRole1\bin\Release\FTPServerRole.dll
+F:\AzureFTP\WorkerRole1\bin\Release\FTPServerRole.pdb
+F:\AzureFTP\WorkerRole1\bin\Release\AzureFtpServer.dll
+F:\AzureFTP\WorkerRole1\bin\Release\Microsoft.WindowsAzure.Diagnostics.dll
+F:\AzureFTP\WorkerRole1\bin\Release\Microsoft.WindowsAzure.StorageClient.dll
+F:\AzureFTP\WorkerRole1\bin\Release\msshrtmi.dll
+F:\AzureFTP\WorkerRole1\bin\Release\AzureFtpServer.pdb
+F:\AzureFTP\WorkerRole1\bin\Release\Microsoft.WindowsAzure.Diagnostics.xml
+F:\AzureFTP\WorkerRole1\bin\Release\Microsoft.WindowsAzure.StorageClient.xml
+F:\AzureFTP\WorkerRole1\obj\Release\ResolveAssemblyReference.cache
+F:\AzureFTP\WorkerRole1\obj\Release\FTPServerRole.dll
+F:\AzureFTP\WorkerRole1\obj\Release\FTPServerRole.pdb

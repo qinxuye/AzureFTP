@@ -44,12 +44,21 @@
     <ServiceConfiguration Include="ServiceConfiguration.cscfg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FTPWebRole\FTPWebRole.csproj">
+      <Name>FTPWebRole</Name>
+      <Project>{af20699d-6931-4cba-b264-ea8cb7f0fce5}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>FTPWebRole</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
     <ProjectReference Include="..\WorkerRole1\FTPServerRole.csproj">
       <Name>FTPServerRole</Name>
       <Project>{19d55950-ed17-46ef-85bc-78690cd6ae4e}</Project>
       <Private>True</Private>
       <RoleType>Worker</RoleType>
       <RoleName>FTPServerRole</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

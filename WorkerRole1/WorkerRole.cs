@@ -8,6 +8,9 @@ using AzureFtpServer.Azure;
 using AzureFtpServer.Ftp;
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
+using Microsoft.WindowsAzure.Diagnostics.Management;
+
+
 using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.StorageClient;
 
@@ -18,13 +21,15 @@ namespace FTPServerRole {
         public override void Run() {
 
             Trace.WriteLine("FTPRole entry point called", "Information");
-
+           
             while (true) {
-                if (_server.Started) {
+                if (_server.Started)
+                {
                     Thread.Sleep(10000);
                     Trace.WriteLine("Server is alive.", "Information");
                 }
-                else {
+                else
+                {
                     _server.Start();
                     Trace.WriteLine("Server starting.", "Control");
                 }
@@ -37,9 +42,39 @@ namespace FTPServerRole {
   
             ServicePointManager.DefaultConnectionLimit = 12;
 
-            DiagnosticMonitor.Start("DiagnosticsConnectionString");
 
-     
+            DiagnosticMonitorConfiguration diagConfig = DiagnosticMonitor.GetDefaultInitialConfiguration();
+           /* diagConfig.Directories.ScheduledTransferPeriod = TimeSpan.FromSeconds(15);
+            diagConfig.Logs.ScheduledTransferPeriod = TimeSpan.FromSeconds(15);
+            
+           */
+            PerformanceCounterConfiguration pccCPU = new PerformanceCounterConfiguration();
+            pccCPU.CounterSpecifier = @"\Processor(_Total)\% Processor Time";
+            pccCPU.SampleRate = TimeSpan.FromSeconds(5);
+            diagConfig.PerformanceCounters.DataSources.Add(pccCPU);
+
+            PerformanceCounterConfiguration pccMemory = new PerformanceCounterConfiguration();
+            pccMemory.CounterSpecifier = @"\Memory\Available Mbytes";
+            pccMemory.SampleRate = TimeSpan.FromSeconds(5);
+            diagConfig.PerformanceCounters.DataSources.Add(pccMemory);
+
+
+            diagConfig.PerformanceCounters.ScheduledTransferPeriod = TimeSpan.FromSeconds(15);
+
+            //diagConfig.WindowsEventLog.DataSources.Add("System!*");
+
+            DiagnosticMonitor.Start("DiagnosticsConnectionString", diagConfig);
+            
+            System.Diagnostics.Trace.TraceInformation("OnStart Complete");
+
+            /*
+            String myRoleInstanceName = RoleEnvironment.CurrentRoleInstance.Id;
+            System.Diagnostics.Trace.TraceInformation("TraceInformation:" + myRoleInstanceName);
+            CrashDumps.EnableCollection(true);
+            CrashDumps.EnableCollection(false);
+            */
+           
+           
             RoleEnvironment.Changing += RoleEnvironmentChanging;
 
             if (_server == null)

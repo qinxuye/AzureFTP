@@ -16,3 +16,19 @@ C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Rele
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.Diagnostics.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.StorageClient.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\msshrtmi.dll
+F:\AzureFTP\FTP2Azure\bin\Release\ServiceConfiguration.cscfg
+F:\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\FTPWebRole.dll
+F:\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\FTPWebRole.pdb
+F:\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.xml
+F:\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\System.Web.Providers.dll
+F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\AzureFtpServer.dll
+F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\AzureFtpServer.pdb
+F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.dll
+F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.dll.config
+F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.pdb
+F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.Diagnostics.dll
+F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.StorageClient.dll
+F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\msshrtmi.dll

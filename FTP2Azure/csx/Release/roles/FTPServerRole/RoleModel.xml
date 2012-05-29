@@ -1,10 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FTPServerRole" version="1.6.21103.1459" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Startup>
+    <Task commandLine="DiagnosticsAgent.exe" taskType="background" relativePath="plugins\Diagnostics">
+      <Environment>
+        <Variable name="RdModuleName" value="Diagnostics" />
+        <Variable name="WaRoleType" value="WorkerRole" />
+      </Environment>
+    </Task>
+    <Task commandLine="DiagnosticsAgent.exe /blockStartup" relativePath="plugins\Diagnostics">
+      <Environment>
+        <Variable name="RdModuleName" value="Diagnostics" />
+        <Variable name="WaRoleType" value="WorkerRole" />
+      </Environment>
+    </Task>
+  </Startup>
   <Runtime>
     <EntryPoint>
       <NetFxEntryPoint assemblyName="FTPServerRole.dll" />
     </EntryPoint>
   </Runtime>
+  <ConfigurationSettings>
+    <Setting name="ConnectionString" nameSpace="Microsoft.WindowsAzure.Plugins.Diagnostics" />
+  </ConfigurationSettings>
   <Properties>
     <Property name="RoleType" value="Worker" />
     <Property name="RoleName" value="FTPServerRole" />
@@ -13,11 +30,11 @@
     <Property name="Platform" value="AnyCPU" />
     <Property name="SourceDir" value="" />
     <Property name="SitePhysicalPath" value="" />
-    <Property name="OutputDir" value="C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\" />
+    <Property name="OutputDir" value="F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\" />
     <Property name="EntryPoint" value="FTPServerRole.dll" />
     <Property name="RoleTargetFramework" value="v4.0" />
-    <Property name="OriginalItemSpec" value="C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\FTPServerOnAzure.ccproj" />
-    <Property name="MSBuildSourceProjectFile" value="C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\FTPServerOnAzure.ccproj" />
+    <Property name="OriginalItemSpec" value="F:\AzureFTP\FTP2Azure\FTPServerOnAzure.ccproj" />
+    <Property name="MSBuildSourceProjectFile" value="F:\AzureFTP\FTP2Azure\FTPServerOnAzure.ccproj" />
     <Property name="MSBuildSourceTargetName" value="ResolveSingleWorkerRoleReference" />
     <Property name="TargetFrameworkVersion" value="v4.0" />
     <Property name="TargetRuntimeVersion" value="v4.0" />

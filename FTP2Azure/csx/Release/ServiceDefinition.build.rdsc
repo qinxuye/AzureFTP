@@ -3,5 +3,6 @@
   <elements>
     <interface name="FTPServerRole:bentchmark" url="http://*:80" />
     <interface name="FTPServerRole:FTP" url="tcp://*:21" />
+    <interface name="FTPWebRole:Endpoint1" url="http://*:8080" />
   </elements>
 </serviceContract>

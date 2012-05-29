@@ -1,0 +1,10 @@
+F:\AzureFTP\FTPWebRole\bin\FTPWebRole.dll
+F:\AzureFTP\FTPWebRole\bin\FTPWebRole.pdb
+F:\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\AzureFTP\FTPWebRole\bin\System.Web.Providers.dll
+F:\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.xml
+F:\AzureFTP\FTPWebRole\obj\Release\ResolveAssemblyReference.cache
+F:\AzureFTP\FTPWebRole\obj\Release\FTPWebRole.dll
+F:\AzureFTP\FTPWebRole\obj\Release\FTPWebRole.pdb
