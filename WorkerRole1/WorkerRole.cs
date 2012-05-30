@@ -9,8 +9,6 @@ using AzureFtpServer.Ftp;
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.Diagnostics.Management;
-
-
 using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.StorageClient;
 
@@ -21,6 +19,14 @@ namespace FTPServerRole {
         public override void Run() {
 
             Trace.WriteLine("FTPRole entry point called", "Information");
+
+            // This is a sample worker implementation. Replace with your logic.
+            Trace.WriteLine("AzureFTPWatch entry point called", "Information");
+
+            System.Timers.Timer checkCPUTimer = new System.Timers.Timer();
+            checkCPUTimer.Interval = 10000;  //use 300000.0 for 5 minutes
+            checkCPUTimer.Elapsed += new System.Timers.ElapsedEventHandler(checkCPUTimer_Elapsed);
+            checkCPUTimer.Start();
            
             while (true) {
                 if (_server.Started)
@@ -35,6 +41,11 @@ namespace FTPServerRole {
                 }
 
             }
+        }
+
+        void checkCPUTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            EvaluatePerfData();
         }
 
         public override bool OnStart() {
@@ -95,6 +106,21 @@ namespace FTPServerRole {
            
                 e.Cancel = true;
             }
+        }
+
+        public void EvaluatePerfData()
+        {
+            Trace.TraceInformation("Starting TestPerfData");
+            /*try
+            {*/
+            InstanceCountDecider.EvaluatePerfData();
+            /*}
+            catch (System.Exception ex)
+            {
+                Trace.WriteLine("Worker Role Error: " + ex.Message);
+            }*/
+
+
         }
     }
 }

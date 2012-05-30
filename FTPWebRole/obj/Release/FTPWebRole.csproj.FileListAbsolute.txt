@@ -8,3 +8,13 @@ F:\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.xml
 F:\AzureFTP\FTPWebRole\obj\Release\ResolveAssemblyReference.cache
 F:\AzureFTP\FTPWebRole\obj\Release\FTPWebRole.dll
 F:\AzureFTP\FTPWebRole\obj\Release\FTPWebRole.pdb
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\bin\FTPWebRole.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\bin\FTPWebRole.pdb
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\bin\System.Web.Providers.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\obj\Release\FTPWebRole.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTPWebRole\obj\Release\FTPWebRole.pdb

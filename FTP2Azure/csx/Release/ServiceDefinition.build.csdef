@@ -21,6 +21,7 @@
       <Setting name="AccountName" />
       <Setting name="BaseUri" />
       <Setting name="DiagnosticsConnectionString" />
+      <Setting name="FTPOnAzureCer" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
       <Setting name="Mode" />
       <Setting name="ProviderName" />
@@ -31,6 +32,8 @@
       <InputEndpoint name="bentchmark" protocol="http" port="80" localPort="80" />
       <InputEndpoint name="FTP" protocol="tcp" port="21" localPort="21" />
     </Endpoints>
-    <Certificates />
+    <Certificates>
+      <Certificate name="FTPOnAzure" storeLocation="LocalMachine" storeName="My" />
+    </Certificates>
   </WorkerRole>
 </ServiceDefinition>

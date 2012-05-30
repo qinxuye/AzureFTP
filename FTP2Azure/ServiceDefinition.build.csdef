@@ -23,10 +23,14 @@
       <Setting name="BaseUri" />
       <Setting name="UseHttps" />
       <Setting name="UseAsyncMethods" />
+      <Setting name="FTPOnAzureCer" />
     </ConfigurationSettings>
     <Imports>
       <Import moduleName="Diagnostics" />
     </Imports>
+    <Certificates>
+      <Certificate name="FTPOnAzure" storeLocation="LocalMachine" storeName="My" />
+    </Certificates>
   </WorkerRole>
   <WebRole name="FTPWebRole" vmsize="Small">
     <Sites>

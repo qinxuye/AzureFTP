@@ -14,7 +14,11 @@
       <Setting name="ProviderName" value="AzureBlobStorageProvider" />
       <Setting name="BaseUri" value="" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="FTPOnAzureCer" value="7B93E72B68F98A017E71E627C10AF1C4F00FD4F9" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="FTPOnAzure" thumbprint="7B93E72B68F98A017E71E627C10AF1C4F00FD4F9" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
   <Role name="FTPWebRole">
     <Instances count="1" />

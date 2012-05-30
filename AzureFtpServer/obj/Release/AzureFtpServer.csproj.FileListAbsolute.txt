@@ -5,10 +5,10 @@ C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\bin\Releas
 C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\obj\Release\ResolveAssemblyReference.cache
 C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\obj\Release\AzureFtpServer.dll
 C:\Users\ChenDuyi\Desktop\os\ftp2azure-64197\FTP2Azure\AzureFtpServer\obj\Release\AzureFtpServer.pdb
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\obj\Release\ResolveAssemblyReference.cache
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\obj\Release\AzureFtpServer.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\bin\Release\AzureFtpServer.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\bin\Release\AzureFtpServer.pdb
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\bin\Release\Microsoft.WindowsAzure.StorageClient.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\bin\Release\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\obj\Release\AzureFtpServer.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\obj\Release\AzureFtpServer.pdb
