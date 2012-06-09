@@ -24,13 +24,6 @@ F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.Diagnosti
 F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.StorageClient.dll
 F:\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\msshrtmi.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\bin\Release\ServiceConfiguration.cscfg
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\bin\Release\ValidationIssues.xml
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\About.aspx
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Account\ChangePassword.aspx
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Account\ChangePasswordSuccess.aspx
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Account\Login.aspx
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Account\Register.aspx
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Account\Web.config
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\FTPWebRole.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\FTPWebRole.pdb
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\Microsoft.WindowsAzure.Diagnostics.dll
@@ -38,20 +31,13 @@ C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Rele
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\Microsoft.WindowsAzure.StorageClient.xml
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\bin\System.Web.Providers.dll
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Default.aspx
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Global.asax
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\packages.config
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Scripts\jquery-1.4.1-vsdoc.js
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Scripts\jquery-1.4.1.js
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Scripts\jquery-1.4.1.min.js
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Site.Master
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Styles\Site.css
-C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPWebRole\Web.config
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\AzureFtpServer.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\AzureFtpServer.pdb
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.dll.config
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPServerRole.pdb
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPWebRole.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\FTPWebRole.pdb
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.Diagnostics.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\Microsoft.WindowsAzure.StorageClient.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\FTP2Azure\obj\Release\FTPServerRole\msshrtmi.dll

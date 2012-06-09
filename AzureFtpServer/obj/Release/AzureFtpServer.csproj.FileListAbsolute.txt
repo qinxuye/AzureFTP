@@ -12,3 +12,5 @@ C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\bin
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\obj\Release\AzureFtpServer.dll
 C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\obj\Release\AzureFtpServer.pdb
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\bin\Release\FTPWebRole.dll
+C:\Users\Chine\Documents\Visual Studio 2010\Projects\AzureFTP\AzureFtpServer\bin\Release\FTPWebRole.pdb

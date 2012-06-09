@@ -83,7 +83,7 @@ namespace AzureFtpServer.Ftp
 
         public void Process(Byte[] abData)
         {
-            string sMessage = Encoding.ASCII.GetString(abData);
+            string sMessage = Encoding.GetEncoding("gbk").GetString(abData);
             sMessage = sMessage.Substring(0, sMessage.IndexOf('\r'));
 
             FtpServerMessageHandler.SendMessage(Id, sMessage);

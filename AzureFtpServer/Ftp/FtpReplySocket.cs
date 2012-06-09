@@ -37,7 +37,8 @@ namespace AzureFtpServer.Ftp
 
         public bool Send(string sMessage)
         {
-            byte[] abData = Encoding.ASCII.GetBytes(sMessage);
+            //byte[] abData = Encoding.ASCII.GetBytes(sMessage);
+            byte[] abData = Encoding.GetEncoding("gbk").GetBytes(sMessage);
             return Send(abData, abData.Length);
         }
 

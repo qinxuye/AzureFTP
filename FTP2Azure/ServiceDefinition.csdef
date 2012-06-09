@@ -15,6 +15,7 @@
       <Setting name="UseHttps" />
       <Setting name="UseAsyncMethods" />
       <Setting name="FTPOnAzureCer" />
+      <Setting name="DataConnectionString" />
     </ConfigurationSettings>
     <Imports>
       <Import moduleName="Diagnostics" />
@@ -37,5 +38,8 @@
     <Imports>
       <Import moduleName="Diagnostics" />
     </Imports>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+    </ConfigurationSettings>
   </WebRole>
 </ServiceDefinition>

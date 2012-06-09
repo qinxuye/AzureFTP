@@ -83,7 +83,6 @@
     <Compile Include="AzureMngmntRESTLib\AzureMngmntHandler.cs" />
     <Compile Include="AzureMngmntRESTLib\PerformanceData.cs" />
     <Compile Include="InstanceCountDecider.cs" />
-    <Compile Include="PerfCountDataHandler.cs" />
     <Compile Include="WorkerRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

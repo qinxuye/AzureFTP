@@ -31,9 +31,12 @@ namespace AzureFTP
 
         public IFile OpenFile(string sPath, bool fWrite)
         {
-            //var f = new AzureFile();
             sPath = PreparePath(sPath);
             AzureCloudFile file = _provider.Get(sPath, true);
+
+            if (file == null)
+                return new AzureFile();
+
             var f = new AzureFile
             {
                 File = new MemoryStream(file.Data)

@@ -301,7 +301,6 @@ namespace AzureFtpServer.Provider {
 
             return files;
         }
-
       
         public void Overwrite(string originalPath, AzureCloudFile newObject)
         {

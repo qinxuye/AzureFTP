@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FTP2Azure" generation="1" functional="0" release="0" Id="c73c0bb4-24f5-4e50-bd4a-7f1250ad72b5" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FTP2Azure" generation="1" functional="0" release="0" Id="adf54866-753a-4acf-817c-b3ea18b2b049" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="FTP2AzureGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -40,6 +40,11 @@
             <mapMoniker name="/FTP2Azure/FTP2AzureGroup/MapFTPServerRole:BaseUri" />
           </maps>
         </aCS>
+        <aCS name="FTPServerRole:DataConnectionString" defaultValue="">
+          <maps>
+            <mapMoniker name="/FTP2Azure/FTP2AzureGroup/MapFTPServerRole:DataConnectionString" />
+          </maps>
+        </aCS>
         <aCS name="FTPServerRole:DiagnosticsConnectionString" defaultValue="">
           <maps>
             <mapMoniker name="/FTP2Azure/FTP2AzureGroup/MapFTPServerRole:DiagnosticsConnectionString" />
@@ -78,6 +83,11 @@
         <aCS name="FTPServerRoleInstances" defaultValue="[1,1,1]">
           <maps>
             <mapMoniker name="/FTP2Azure/FTP2AzureGroup/MapFTPServerRoleInstances" />
+          </maps>
+        </aCS>
+        <aCS name="FTPWebRole:DataConnectionString" defaultValue="">
+          <maps>
+            <mapMoniker name="/FTP2Azure/FTP2AzureGroup/MapFTPWebRole:DataConnectionString" />
           </maps>
         </aCS>
         <aCS name="FTPWebRole:Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" defaultValue="">
@@ -129,6 +139,11 @@
             <aCSMoniker name="/FTP2Azure/FTP2AzureGroup/FTPServerRole/BaseUri" />
           </setting>
         </map>
+        <map name="MapFTPServerRole:DataConnectionString" kind="Identity">
+          <setting>
+            <aCSMoniker name="/FTP2Azure/FTP2AzureGroup/FTPServerRole/DataConnectionString" />
+          </setting>
+        </map>
         <map name="MapFTPServerRole:DiagnosticsConnectionString" kind="Identity">
           <setting>
             <aCSMoniker name="/FTP2Azure/FTP2AzureGroup/FTPServerRole/DiagnosticsConnectionString" />
@@ -169,6 +184,11 @@
             <sCSPolicyIDMoniker name="/FTP2Azure/FTP2AzureGroup/FTPServerRoleInstances" />
           </setting>
         </map>
+        <map name="MapFTPWebRole:DataConnectionString" kind="Identity">
+          <setting>
+            <aCSMoniker name="/FTP2Azure/FTP2AzureGroup/FTPWebRole/DataConnectionString" />
+          </setting>
+        </map>
         <map name="MapFTPWebRole:Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" kind="Identity">
           <setting>
             <aCSMoniker name="/FTP2Azure/FTP2AzureGroup/FTPWebRole/Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
@@ -191,6 +211,7 @@
               <aCS name="AccountKey" defaultValue="" />
               <aCS name="AccountName" defaultValue="" />
               <aCS name="BaseUri" defaultValue="" />
+              <aCS name="DataConnectionString" defaultValue="" />
               <aCS name="DiagnosticsConnectionString" defaultValue="" />
               <aCS name="FTPOnAzureCer" defaultValue="" />
               <aCS name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" defaultValue="" />
@@ -226,6 +247,7 @@
               <inPort name="Endpoint1" protocol="http" portRanges="8080" />
             </componentports>
             <settings>
+              <aCS name="DataConnectionString" defaultValue="" />
               <aCS name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" defaultValue="" />
               <aCS name="__ModelData" defaultValue="&lt;m role=&quot;FTPWebRole&quot; xmlns=&quot;urn:azure:m:v1&quot;&gt;&lt;r name=&quot;FTPServerRole&quot;&gt;&lt;e name=&quot;bentchmark&quot; /&gt;&lt;e name=&quot;FTP&quot; /&gt;&lt;/r&gt;&lt;r name=&quot;FTPWebRole&quot;&gt;&lt;e name=&quot;Endpoint1&quot; /&gt;&lt;/r&gt;&lt;/m&gt;" />
             </settings>
@@ -249,19 +271,19 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="5bef920d-5bb3-4f52-a708-ead59b020f02" ref="Microsoft.RedDog.Contract\ServiceContract\FTP2AzureContract@ServiceDefinition.build">
+    <implementation Id="2778e64c-1ccf-4694-a6d7-ed3a26ace00c" ref="Microsoft.RedDog.Contract\ServiceContract\FTP2AzureContract@ServiceDefinition.build">
       <interfacereferences>
-        <interfaceReference Id="a9aec228-179c-4f27-9d58-79b92c1a792c" ref="Microsoft.RedDog.Contract\Interface\FTPServerRole:bentchmark@ServiceDefinition.build">
+        <interfaceReference Id="857535fd-5140-4231-810f-07f4d591d69a" ref="Microsoft.RedDog.Contract\Interface\FTPServerRole:bentchmark@ServiceDefinition.build">
           <inPort>
             <inPortMoniker name="/FTP2Azure/FTP2AzureGroup/FTPServerRole:bentchmark" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="87acd0b9-56d8-4b58-89f0-c1bfe4448162" ref="Microsoft.RedDog.Contract\Interface\FTPServerRole:FTP@ServiceDefinition.build">
+        <interfaceReference Id="1be3c444-166e-4e91-97be-5bb271ff23e6" ref="Microsoft.RedDog.Contract\Interface\FTPServerRole:FTP@ServiceDefinition.build">
           <inPort>
             <inPortMoniker name="/FTP2Azure/FTP2AzureGroup/FTPServerRole:FTP" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="461642c3-425d-4c54-9a93-c07aa62b94e3" ref="Microsoft.RedDog.Contract\Interface\FTPWebRole:Endpoint1@ServiceDefinition.build">
+        <interfaceReference Id="dbb3814d-f578-4391-ae6d-a492db24352e" ref="Microsoft.RedDog.Contract\Interface\FTPWebRole:Endpoint1@ServiceDefinition.build">
           <inPort>
             <inPortMoniker name="/FTP2Azure/FTP2AzureGroup/FTPWebRole:Endpoint1" />
           </inPort>

@@ -5,6 +5,7 @@
       <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
     </LocalResources>
     <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>
     <Endpoints>
@@ -20,6 +21,7 @@
       <Setting name="AccountKey" />
       <Setting name="AccountName" />
       <Setting name="BaseUri" />
+      <Setting name="DataConnectionString" />
       <Setting name="DiagnosticsConnectionString" />
       <Setting name="FTPOnAzureCer" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />

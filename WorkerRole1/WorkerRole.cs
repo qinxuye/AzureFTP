@@ -24,7 +24,7 @@ namespace FTPServerRole {
             Trace.WriteLine("AzureFTPWatch entry point called", "Information");
 
             System.Timers.Timer checkCPUTimer = new System.Timers.Timer();
-            checkCPUTimer.Interval = 10000;  //use 300000.0 for 5 minutes
+            checkCPUTimer.Interval = 300000;  //use 300000.0 for 5 minutes
             checkCPUTimer.Elapsed += new System.Timers.ElapsedEventHandler(checkCPUTimer_Elapsed);
             checkCPUTimer.Start();
            
@@ -69,6 +69,11 @@ namespace FTPServerRole {
             pccMemory.SampleRate = TimeSpan.FromSeconds(5);
             diagConfig.PerformanceCounters.DataSources.Add(pccMemory);
 
+            PerformanceCounterConfiguration pccTcpFail = new PerformanceCounterConfiguration();
+            pccTcpFail.CounterSpecifier = @"\TCPv4\Connection Failures";
+            pccTcpFail.SampleRate = TimeSpan.FromSeconds(5);
+            diagConfig.PerformanceCounters.DataSources.Add(pccTcpFail);
+
 
             diagConfig.PerformanceCounters.ScheduledTransferPeriod = TimeSpan.FromSeconds(15);
 
@@ -93,6 +98,22 @@ namespace FTPServerRole {
 
             _server.NewConnection += ServerNewConnection;
 
+            CloudStorageAccount.SetConfigurationSettingPublisher((configName, configSetter) =>
+            {
+                configSetter(RoleEnvironment.GetConfigurationSettingValue(configName));
+                RoleEnvironment.Changed += (sender, arg) =>
+                {
+                    if (arg.Changes.OfType<RoleEnvironmentConfigurationSettingChange>()
+                        .Any((change) => (change.ConfigurationSettingName == configName)))
+                    {
+                        if (!configSetter(RoleEnvironment.GetConfigurationSettingValue(configName)))
+                        {
+                            RoleEnvironment.RequestRecycle();
+                        }
+                    }
+                };
+            });
+
             return base.OnStart();
         }
 
@@ -110,15 +131,14 @@ namespace FTPServerRole {
 
         public void EvaluatePerfData()
         {
-            Trace.TraceInformation("Starting TestPerfData");
-            /*try
-            {*/
-            InstanceCountDecider.EvaluatePerfData();
-            /*}
+            try
+            {
+                InstanceCountDecider.EvaluatePerfData();
+            }
             catch (System.Exception ex)
             {
                 Trace.WriteLine("Worker Role Error: " + ex.Message);
-            }*/
+            }
 
 
         }

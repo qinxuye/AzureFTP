@@ -11,6 +11,22 @@ namespace FTPWebRole
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            bool isSuperUser = false;
+
+            var identity = HttpContext.Current.User.Identity;
+            if (identity.IsAuthenticated)
+            {
+                var accountManager = new AccountManager();
+                isSuperUser = accountManager.IsSuperUser(identity.Name);
+            }
+
+            if (isSuperUser)
+            {
+                NavigationMenu.Items.Add(new MenuItem() {
+                    Text = "管理用户",
+                    NavigateUrl = "~/UserManagement.aspx"
+                });
+            }
 
         }
     }

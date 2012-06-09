@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Diagnostics;
 
 namespace FTPWebRole.Account
 {
@@ -13,14 +14,23 @@ namespace FTPWebRole.Account
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            RegisterUser.ContinueDestinationPageUrl = Request.QueryString["ReturnUrl"];
         }
 
         protected void RegisterUser_CreatedUser(object sender, EventArgs e)
         {
-            FormsAuthentication.SetAuthCookie(RegisterUser.UserName, false /* createPersistentCookie */);
+            string username = UserName.Text;
+            string password = Password.Text;
 
-            string continueUrl = RegisterUser.ContinueDestinationPageUrl;
+            System.Diagnostics.Trace.WriteLine(username + " start to register");
+
+            var accountManager = new AccountManager();
+            accountManager.AddAccount(username, password);
+
+            System.Diagnostics.Trace.WriteLine(username + " registered");
+
+            FormsAuthentication.SetAuthCookie(username, false /* createPersistentCookie */);
+
+            string continueUrl = Request.QueryString["ReturnUrl"];
             if (String.IsNullOrEmpty(continueUrl))
             {
                 continueUrl = "~/";

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using Microsoft.WindowsAzure;
+using Microsoft.WindowsAzure.ServiceRuntime;
 
 namespace FTPWebRole
 {
@@ -12,7 +14,21 @@ namespace FTPWebRole
 
         void Application_Start(object sender, EventArgs e)
         {
-            // 在应用程序启动时运行的代码
+            CloudStorageAccount.SetConfigurationSettingPublisher((configName, configSetter) =>
+            {
+                configSetter(RoleEnvironment.GetConfigurationSettingValue(configName));
+                RoleEnvironment.Changed += (rsender, arg) =>
+                {
+                    if (arg.Changes.OfType<RoleEnvironmentConfigurationSettingChange>()
+                        .Any((change) => (change.ConfigurationSettingName == configName)))
+                    {
+                        if (!configSetter(RoleEnvironment.GetConfigurationSettingValue(configName)))
+                        {
+                            RoleEnvironment.RequestRecycle();
+                        }
+                    }
+                };
+            });
 
         }
 
