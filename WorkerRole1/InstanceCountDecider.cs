@@ -13,18 +13,18 @@ namespace FTPServerRole
         private const int MAX_INSTANCE_COUNT = 2;
         private enum ScaleAction { ScaleOut, ScaleIn };
 
-        private const double CPU_WGHT = (double)1 / 3;
-        private const double MEMORY_WGHT = (double)1 / 3;
-        private const double TCP_CONN_FAIL_WGHT = (double)1 / 3;
+        private const double CPU_WGHT = (double)1 / 2;
+        private const double MEMORY_WGHT = (double)1 / 4;
+        private const double TCP_CONN_FAIL_WGHT = (double)1 / 4;
 
         private const double CPU_UPPER = 80.00;
-        private const double CPU_LOWER = 20.00;
+        private const double CPU_LOWER = 10.00;
 
         private const double REST_MEMORY_UPPER = 100.00;
-        private const double REST_MEMORY_LOWER = 300.00;
+        private const double REST_MEMORY_LOWER = 950.00;
 
-        private const double TCP_CONN_FAIL_UPPER = 600.00;
-        private const double TCP_CONN_FAIL_LOWER = 100.00;
+        private const double TCP_CONN_FAIL_UPPER = 10.00;
+        private const double TCP_CONN_FAIL_LOWER = 50.00;
 
         private static double getAverage(string perfCountType)
         {
@@ -32,7 +32,8 @@ namespace FTPServerRole
             var context = new PerformanceDataContext(account.TableEndpoint.ToString(), account.Credentials);
             var data = context.PerfData;
 
-            TimeSpan span = TimeSpan.FromHours(1.0);
+            TimeSpan span = TimeSpan.FromMinutes(5.0);
+            //TimeSpan span = TimeSpan.FromHours(1.0);
             long start = DateTime.UtcNow.Subtract(span).Ticks;
 
             var results = (from d in data
@@ -47,6 +48,9 @@ namespace FTPServerRole
                 sum += result.CounterValue;
                 count++;
             }
+
+            if (count == 0)
+                return 0.0;
 
             //Trace.TraceInformation("Get " + perfCountType + ": " + (sum / count).ToString());
             return sum / count;
@@ -97,7 +101,7 @@ namespace FTPServerRole
             double memoryAvailableAverage = getMemoryAvailableAverage();
             double tcpConnFailAverage = getTcpConnFailAverage();
 
-            /*if (cpuAverage >= CPU_UPPER || memoryAvailableAverage <= REST_MEMORY_UPPER ||
+            if (cpuAverage >= CPU_UPPER || memoryAvailableAverage <= REST_MEMORY_UPPER ||
                 tcpConnFailAverage >= TCP_CONN_FAIL_UPPER)
             {
                 ActionOnInstanceCount(ScaleAction.ScaleOut);
@@ -110,7 +114,7 @@ namespace FTPServerRole
                 ActionOnInstanceCount(ScaleAction.ScaleIn);
                 Trace.TraceInformation("Try scale in");
                 return;
-            }*/
+            }
 
             double cpuProb = 0.00;
             if (cpuAverage >= CPU_UPPER) cpuProb = 1.00;
@@ -131,14 +135,15 @@ namespace FTPServerRole
             Trace.TraceInformation("Scale probability is: " + prob.ToString());
             if (prob > 0.6)
             {
-                //ActionOnInstanceCount(ScaleAction.ScaleOut);
+                ActionOnInstanceCount(ScaleAction.ScaleOut);
                 Trace.TraceInformation("Try scale out");
             }
             else if (prob < 0.2)
             {
-                //ActionOnInstanceCount(ScaleAction.ScaleIn);
+                ActionOnInstanceCount(ScaleAction.ScaleIn);
                 Trace.TraceInformation("Try scale in");
             }
+            ActionOnInstanceCount(ScaleAction.ScaleOut);
         }
 
 

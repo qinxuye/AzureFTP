@@ -101,7 +101,7 @@ namespace FTPWebRole
                                where account.Username == Username
                                select account).ToList();
                 if (accounts.Count() > 0)
-                    return accounts.First();
+                    return null;
 
                 bool isActive = true;
                 DateTime createDate = DateTime.Now;
@@ -166,21 +166,27 @@ namespace FTPWebRole
 
         public void UpdateFtpAccount(string Username, bool isSuperUser, bool isActive)
         {
-            var ftpAccount = (from account in context.FtpAccounts
-                              where account.Username == Username
-                              select account).First();
-            ftpAccount.IsSuperUser = isSuperUser;
-            ftpAccount.IsActive = isActive;
+            lock (OperationLock)
+            {
+                var ftpAccount = (from account in context.FtpAccounts
+                                  where account.Username == Username
+                                  select account).First();
+                ftpAccount.IsSuperUser = isSuperUser;
+                ftpAccount.IsActive = isActive;
 
-            this.context.UpdateFtpAccount(ftpAccount);
+                this.context.UpdateFtpAccount(ftpAccount);
+            }
         }
 
         public void DeleteFtpAccount(string Username)
         {
-            var ftpAccount = (from account in context.FtpAccounts
-                              where account.Username == Username
-                              select account).First();
-            this.context.DeleteFtpAccount(ftpAccount);
+            lock (OperationLock)
+            {
+                var ftpAccount = (from account in context.FtpAccounts
+                                  where account.Username == Username
+                                  select account).First();
+                this.context.DeleteFtpAccount(ftpAccount);
+            }
         }
 
     }

@@ -3,7 +3,7 @@
   <Role name="FTPServerRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="DiagnosticsConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="DiagnosticsConnectionString" value="DefaultEndpointsProtocol=https;AccountName=ftponazure;AccountKey=UjQ1Wo2vj6HfFCXEUqJHOYEuf5H9/H03u7G262jP7aPBGkv/LV4jbmGGFEuBYHFv6p0bnDZgwXv37xl9fuFMOQ==" />
       <Setting name="AccountKey" value="UjQ1Wo2vj6HfFCXEUqJHOYEuf5H9/H03u7G262jP7aPBGkv/LV4jbmGGFEuBYHFv6p0bnDZgwXv37xl9fuFMOQ==" />
       <Setting name="AccountName" value="ftponazure" />
       <Setting name="Mode" value="Live" />
@@ -13,19 +13,32 @@
       <Setting name="UseAsyncMethods" value="true" />
       <Setting name="ProviderName" value="AzureBlobStorageProvider" />
       <Setting name="BaseUri" value="" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=ftponazure;AccountKey=UjQ1Wo2vj6HfFCXEUqJHOYEuf5H9/H03u7G262jP7aPBGkv/LV4jbmGGFEuBYHFv6p0bnDZgwXv37xl9fuFMOQ==" />
       <Setting name="FTPOnAzureCer" value="7B93E72B68F98A017E71E627C10AF1C4F00FD4F9" />
-      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=ftponazure;AccountKey=UjQ1Wo2vj6HfFCXEUqJHOYEuf5H9/H03u7G262jP7aPBGkv/LV4jbmGGFEuBYHFv6p0bnDZgwXv37xl9fuFMOQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="AzureFTP" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEB3tjtPmdzGmQI9yeycU+R4wDQYJKoZIhvcNAQEBBQAEggEAgSVrqGjdwiRi5IYozbUgjIKCt+5IU8ZvnKhNb9gNK8ixatK3kP1WeBqZ7k3JD8k/DSdVYev4T6CbO5ETk0t8RAXuVILbpiAk9yNxHYUPkSU1jJQCxRdDEJTPHsQOztxRATCaxAx1zf565ewoMZLyLGH0MF3zhALdfGxP4D90Cq+so3+vmrUJjH+d1RUEH6jfe+eylWgFMJPVqCCtsjbEwv8fciitNidmJRp3MRY+MlcD5ycZqeV4De7c6uOlxumHZDEt5NcndStfjO56B/vDiopu51hEwuHVBSxk4hoesyIpdVmlcBjtSYolRBQ801TN/cO/1RJdGCfpxFk3Zm4w8jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECPq7rhhW/wkHgBAroWKgUe142YqN33qdjtGs" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-06-30T23:59:59.0000000+08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
     </ConfigurationSettings>
     <Certificates>
       <Certificate name="FTPOnAzure" thumbprint="7B93E72B68F98A017E71E627C10AF1C4F00FD4F9" thumbprintAlgorithm="sha1" />
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="0303019BC6D16040AD914BF8BEA1D8B996468262" thumbprintAlgorithm="sha1" />
     </Certificates>
   </Role>
   <Role name="FTPWebRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=ftponazure;AccountKey=UjQ1Wo2vj6HfFCXEUqJHOYEuf5H9/H03u7G262jP7aPBGkv/LV4jbmGGFEuBYHFv6p0bnDZgwXv37xl9fuFMOQ==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=ftponazure;AccountKey=UjQ1Wo2vj6HfFCXEUqJHOYEuf5H9/H03u7G262jP7aPBGkv/LV4jbmGGFEuBYHFv6p0bnDZgwXv37xl9fuFMOQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="AzureFTP" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEB3tjtPmdzGmQI9yeycU+R4wDQYJKoZIhvcNAQEBBQAEggEAgSVrqGjdwiRi5IYozbUgjIKCt+5IU8ZvnKhNb9gNK8ixatK3kP1WeBqZ7k3JD8k/DSdVYev4T6CbO5ETk0t8RAXuVILbpiAk9yNxHYUPkSU1jJQCxRdDEJTPHsQOztxRATCaxAx1zf565ewoMZLyLGH0MF3zhALdfGxP4D90Cq+so3+vmrUJjH+d1RUEH6jfe+eylWgFMJPVqCCtsjbEwv8fciitNidmJRp3MRY+MlcD5ycZqeV4De7c6uOlxumHZDEt5NcndStfjO56B/vDiopu51hEwuHVBSxk4hoesyIpdVmlcBjtSYolRBQ801TN/cO/1RJdGCfpxFk3Zm4w8jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECPq7rhhW/wkHgBAroWKgUe142YqN33qdjtGs" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-06-30T23:59:59.0000000+08:00" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="0303019BC6D16040AD914BF8BEA1D8B996468262" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
 </ServiceConfiguration>

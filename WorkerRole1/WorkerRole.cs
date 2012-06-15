@@ -24,7 +24,7 @@ namespace FTPServerRole {
             Trace.WriteLine("AzureFTPWatch entry point called", "Information");
 
             System.Timers.Timer checkCPUTimer = new System.Timers.Timer();
-            checkCPUTimer.Interval = 300000;  //use 300000.0 for 5 minutes
+            checkCPUTimer.Interval = 3000;  //use 300000.0 for 5 minutes
             checkCPUTimer.Elapsed += new System.Timers.ElapsedEventHandler(checkCPUTimer_Elapsed);
             checkCPUTimer.Start();
            
@@ -51,7 +51,7 @@ namespace FTPServerRole {
         public override bool OnStart() {
 
   
-            ServicePointManager.DefaultConnectionLimit = 12;
+            ServicePointManager.DefaultConnectionLimit = 100;
 
 
             DiagnosticMonitorConfiguration diagConfig = DiagnosticMonitor.GetDefaultInitialConfiguration();

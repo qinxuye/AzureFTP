@@ -24,7 +24,14 @@ namespace FTPWebRole.Account
             System.Diagnostics.Trace.WriteLine(username + " start to register");
 
             var accountManager = new AccountManager();
-            accountManager.AddAccount(username, password);
+
+            var ftpAccount = accountManager.AddAccount(username, password);
+
+            if (ftpAccount == null)
+            {
+                ErrorMessage.Text = "该用户名已被使用";
+                return;
+            }
 
             System.Diagnostics.Trace.WriteLine(username + " registered");
 

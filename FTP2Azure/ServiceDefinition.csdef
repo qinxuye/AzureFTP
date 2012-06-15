@@ -3,7 +3,6 @@
   <WorkerRole name="FTPServerRole">
     <Endpoints>
       <InputEndpoint name="FTP" port="21" protocol="tcp" />
-      <InputEndpoint name="bentchmark" protocol="http" port="80" />
     </Endpoints>
     <ConfigurationSettings>
       <Setting name="DiagnosticsConnectionString" />
@@ -19,6 +18,8 @@
     </ConfigurationSettings>
     <Imports>
       <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
     </Imports>
     <Certificates>
       <Certificate name="FTPOnAzure" storeLocation="LocalMachine" storeName="My" />
@@ -33,10 +34,11 @@
       </Site>
     </Sites>
     <Endpoints>
-      <InputEndpoint name="Endpoint1" protocol="http" port="8080" />
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
     <Imports>
       <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />

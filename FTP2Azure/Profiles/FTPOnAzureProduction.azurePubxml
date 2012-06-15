@@ -12,9 +12,9 @@
     <AzureStorageAccountLabel>FTPOnAzure</AzureStorageAccountLabel>
     <AzureDeploymentLabel>FTPServerOnAzure</AzureDeploymentLabel>
     <AzureSolutionConfiguration>Release</AzureSolutionConfiguration>
-    <AzureServiceConfiguration>Default</AzureServiceConfiguration>
+    <AzureServiceConfiguration>cloud</AzureServiceConfiguration>
     <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
     <AzureAllowUpgrade>True</AzureAllowUpgrade>
-    <AzureEnableRemoteDesktop>False</AzureEnableRemoteDesktop>
+    <AzureEnableRemoteDesktop>True</AzureEnableRemoteDesktop>
   </PropertyGroup>
 </Project>

@@ -4,5 +4,6 @@
   <Operation type="Path" path="diagnostics\x86" />
   <PermissionLevels>
     <StoredCert name="Stored0FTPOnAzure" permissionLevel="limitedOrElevated" />
+    <StoredCert name="Stored1Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" permissionLevel="elevated" />
   </PermissionLevels>
 </RuntimeSetup>

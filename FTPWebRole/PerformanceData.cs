@@ -60,7 +60,7 @@ namespace FTPWebRole
 
         public static List<Performance> GetProcessorTime()
         {
-            var account = CloudStorageAccount.DevelopmentStorageAccount;
+            var account = CloudStorageAccount.FromConfigurationSetting("DataConnectionString");
             var context = new PerformanceDataContext(account.TableEndpoint.ToString(), account.Credentials);
             var data = context.PerfData;
             var timeFrameInMinutes = 30;
@@ -114,7 +114,7 @@ d).ToList<PerformanceData>();
         public static List<Performance> GetMemoryTime()
         {
 
-            var account = CloudStorageAccount.DevelopmentStorageAccount;
+            var account = CloudStorageAccount.FromConfigurationSetting("DataConnectionString");
             var context = new PerformanceDataContext(account.TableEndpoint.ToString(), account.Credentials);
             var data = context.PerfData;
             var timeFrameInMinutes = 30;
@@ -147,7 +147,7 @@ d).ToList<PerformanceData>();
         public static List<Performance> GetTcpFail()
         {
 
-            var account = CloudStorageAccount.DevelopmentStorageAccount;
+            var account = CloudStorageAccount.FromConfigurationSetting("DataConnectionString");
             var context = new PerformanceDataContext(account.TableEndpoint.ToString(), account.Credentials);
             var data = context.PerfData;
             var timeFrameInMinutes = 30;

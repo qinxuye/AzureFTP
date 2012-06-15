@@ -15,7 +15,7 @@
         <div class="header">
             <div class="title">
                 <h1>
-                    我的 ASP.NET 应用程序
+                    Azure FTP
                 </h1>
             </div>
             <div class="loginDisplay">
@@ -33,7 +33,8 @@
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="主页"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="关于"/>
+                        <asp:MenuItem NavigateUrl="~/Benchmark_Chart.aspx" Text="监测图"/>
+                        <asp:MenuItem NavigateUrl="~/Benchmark_Table.aspx" Text="监测表"/>
                     </Items>
                 </asp:Menu>
             </div>
